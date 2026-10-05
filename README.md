@@ -29,6 +29,24 @@ Different operating conditions and disturbances are analysed, including:
 
 The system is implemented in Simulink and its states and trajectory are analysed in open loop.
 
+#### Simulink model
+
+The rocket dynamics are implemented in Simulink using a state-space representation. The model includes the system inputs, six state variables, trajectory visualization and export of simulation results to MATLAB.
+
+![Simulink model](images/simulink_model.png)
+
+#### Open-loop behaviour
+
+The open-loop simulations show how the system behaves under different operating conditions and disturbances. In the angular disturbance case, the rocket develops a significant lateral deviation because no feedback controller is present to correct its attitude or trajectory.
+
+![Open-loop angular disturbance](images/open_loop_angular_disturbance.png)
+
+#### MATLAB visualization
+
+Simulation results exported from Simulink are used in MATLAB to generate a simple visual representation of the rocket trajectory and attitude during the landing phase.
+
+![Rocket landing visualization](images/rocket_animation.png)
+
 ### 2. Discretization and structural analysis
 
 The continuous-time model is discretized using a selected sampling time.
